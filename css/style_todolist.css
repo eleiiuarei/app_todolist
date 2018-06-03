@@ -1,0 +1,174 @@
+body{
+  background-color: rgba(219, 236, 245, 1); /*light blue*/
+  }
+
+.header{
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+  padding: auto;
+  color: rgb(60, 144, 185);/*blue intense*/
+}
+/*.header img{
+    height:100px;
+    widht:auto;
+    float: right;
+}*/
+.header>h2{
+    font-size: 25px;
+    color: rgba(0, 128, 128, 0.9);
+    padding-top: 10px;
+}
+.btn1{
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(43, 85, 106, 0.6);
+  margin: 20px;
+  padding:10px;
+  -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.7);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.7);
+	box-shadow: 0 0 10px rgba(0,0,0,.7);
+  float: right
+}
+.add_task{
+  background-color: rgb(241, 245, 247);
+}
+.btn2{
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(43, 85, 106, 0.6);
+  margin: 20px;
+  padding:15px;
+  -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 10px rgba(3,0,0,.7);
+	-moz-box-shadow: 0 0 10px rgba(3,0,0,.7);
+	box-shadow: 0 0 10px rgba(3,0,0,.7);
+}
+.hidden_add_task{
+  position: absolute;
+    display: none;
+}
+.show_add_task{
+  position: absolute;
+	display: block;
+	margin:60px;
+	padding:25px;
+	text-align: left;
+	text-decoration:none;
+	background-color: white;
+	border: grey;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(3,0,0,.7);
+    -moz-box-shadow: 0 0 10px rgba(3,0,0,.7);
+    box-shadow: 0 0 10px rgba(3,0,0,.7);
+}
+.show_add_task h2{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+    padding: auto;
+    color: rgb(60, 144, 185);/*blue intense*/
+}
+.show_add_task li{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 5px;
+    padding: 5px;
+    color: rgb(56, 64, 68);
+}
+.info_item input{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#infoDescription>input{
+    padding: 30px; /*visualmente ok, pero no es lo que quiero... el espacio para escribir sigue siendo el mismo*/
+}
+.task_buttons{
+    text-align: justify;
+    padding: 10px;
+}
+.task_buttons>.btn4{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(43, 85, 106, 0.6);
+    margin-left: 60px;
+    padding:5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.7);
+    -moz-box-shadow: 0 0 2px rgba(0,0,0,.7);
+    box-shadow: 0 0 2px rgba(0,0,0,.7);
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+/* Style the buttons inside the tab */
+.tab_link{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab_link:hover {
+    background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab_link.active {
+    background-color: #ccc;
+}
+/* Style the tab content */
+.tab_content {
+    display: block;
+    padding: 6px 12px;
+
+    border-top: none;
+}
+.tab_content h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+    padding: auto;
+    color: rgb(60, 144, 185);/*blue intense*/
+}
+/*Formato de tablas */
+.tasks_table{
+    font-family: Charcoal, sans-serif;
+    font-size: 15px;
+    background-color: rgb(241, 245, 247);
+    width: 100%;
+    border-spacing: 15px;
+}
+.tasks_table th{
+    font-weight: bold;
+}
+.tasks_table th, .tasks_table td {
+    border: none;
+    padding: 10px;
+    text-align: left;
+    color: rgb(60, 144, 185)
+}

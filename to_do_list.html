@@ -3,43 +3,61 @@
 <head>
 	<title>My To Do List</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="/css/style_todolist.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style_todolist.css">
 </head>
 <body>
 
-<header>
-	<h1>My To Do List: What should I remember?</h1>
-	<button> + Share </button>
+<header class="header">
+    <button type="button" class="btn1" id="btn1Share">Share My List</button>
+    <!--<img src="img/tick.jpg" alt="done tick">-->
+    <h1 class="h1_header" id="mainTitle">My To Do List</h1>
+    <h2 class="h2_header">What should I remember?</h2>
 </header>
 
 <div>
-	<div>
-		<button>+ New Task</button>
+	<div class="add_task" id="addTask">
+		<button type="button" class="btn2" id="btn2NewTask">+ New Task</button>
 	</div>
-	<div>
+
+	<div class="hidden_add_task" id="theTask">
 		<h2>Create New Task</h2>
-		<div>
-			<p>Title: <input type="text"></p>
-			<p>Due Date: <input type="Date"></p>
-			<p>Status: <button></button>Done<button></button>To Do</p>
-			<p>Description: <input type="text"></p>
-            <p>Remind me on: <input type="Date"></p>
+		<div class="info_window" id="infoWindow">
+            <ul>
+                <li>
+                    <p class="info_item" id="infoTitle">Title: <input type="text" name="Title:"></p>
+                </li>
+			    <li>
+                    <p class="info_item" id="infoDueDate">Due Date: <input type="Date" name="Due Date:"></p>
+                </li>
+                <li>
+                    <p class="info_item" id="infoStatus">Status:
+                        <button class="btn3" id="btn3Done"></button>Done
+                        <button class="btn3" id="btn3ToDo"></button>To Do
+                    </p>
+                </li>
+			    <li>
+                    <p class="info_item" id="infoDescription">Description: <input type="text" name="Description:"></p>
+                </li>
+                <li>
+                    <p class="info_item" id="infoReminderDate">Remind me on: <input type="Date" name="Reminder Date:"></p>
+                </li>
+            </ul>
 		</div>
-        <div>
-            <button>Create</button>
-            <button>Cancel</button>
+        <div class="task_buttons" id="taskButtons">
+            <button class="btn4" id="btn4Create">Create</button>
+            <button class="btn4" id="btn4Cancel">Cancel</button>
         </div>
 	</div>
 </div>
 <div>
-    <div>
-        <button>To Do</button>
-        <button>Done</button>
+    <div class="tab">
+        <button class="tab_link" id="tabToDo">To Do</button>
+        <button class="tab_link" id="tabDone">Done</button>
     </div>
-    <div>
+    <div class="tab_content" id="tabContent">
         <h3>Tasks To Do</h3>
-        <table>
+        <table class="tasks_table">
             <tr>
                 <th>Title</th>
                 <th>Due Date</th>
@@ -52,9 +70,9 @@
             </tr>
         </table>
     </div>
-    <div>
+    <div class="tab_content" id="tabContent">
         <h3>Tasks Already Done</h3>
-        <table>
+        <table class="tasks_table">
             <tr>
                 <th>Title</th>
                 <th>Due Date</th>
