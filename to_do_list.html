@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style_todolist.css">
 </head>
+
 <body>
 
 <header class="header">
@@ -49,6 +50,16 @@
             <button class="btn4" id="btn4Cancel">Cancel</button>
         </div>
 	</div>
+    <div class="hidden_alert" id="capa1Create">
+        <p>You are going to add a new task to your TO DO List. Do you want to continue?</p>
+        <button class ="btn_alertYes" id="createBtnYes" type="button">Yes, create task</button>
+        <button class= "btn_alertNo" id='createBtnNo' type="button">No, continue editing</button>
+    </div>
+    <div class="hidden_alert" id="capa1Cancel">
+        <p>If you don't write add your TO DO here you may (will) forget to do it! <br/> Are you sure you want to cancel?</p>
+        <button class ="btn_alertYes" id="cancelBtnYes" type="button">Yes</button>
+        <button class= "btn_alertNo" id='cancelBtnNo' type="button">No</button>
+    </div>
 </div>
 <div>
     <div class="tab">
@@ -69,8 +80,7 @@
                 <td>She leaves to Galicia</td>
             </tr>
         </table>
-    </div>
-    <div class="tab_content" id="tabContent">
+
         <h3>Tasks Already Done</h3>
         <table class="tasks_table">
             <tr>
@@ -92,7 +102,7 @@
 </footer>
 
 
-<script type="text/javascript" src="/js/js_todolist.js"></script>
+<script type="text/javascript" src="js/js_todolist.js"></script>
 
 </body>
 </html>
