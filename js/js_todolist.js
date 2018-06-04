@@ -1,5 +1,5 @@
 //Mostrar new task box
-let addTask = document.getElementById("addTask");
+let addTask = document.getElementById("btn2NewTask");
 let theTask = document.getElementById("theTask");
 
 let createTask = document.getElementById("btn4Create");

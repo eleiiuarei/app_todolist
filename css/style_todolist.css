@@ -129,7 +129,7 @@ body{
     text-align: center;
     text-decoration:none;
     background-color: white;
-    border: grey, solid;
+    border: grey;
 }
 .show_alert p{
     text-align: center;
@@ -163,12 +163,17 @@ body{
 }
 /* Style the tab content */
 .tab_content {
-    display: block;
+    display: none;
     padding: 6px 12px;
-
+    margin-left: auto;
     border-top: none;
 }
-.tab_content h3{
+.show_tab_content{
+    display: block;
+    padding: 6px 12px;
+    border-top: none;
+}
+.show_tab_content h3{
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;

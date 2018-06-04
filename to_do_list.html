@@ -56,7 +56,7 @@
         <button class= "btn_alertNo" id='createBtnNo' type="button">No, continue editing</button>
     </div>
     <div class="hidden_alert" id="capa1Cancel">
-        <p>If you don't write add your TO DO here you may (will) forget to do it! <br/> Are you sure you want to cancel?</p>
+        <p>If you don't add your TO DO here you may (will) forget to do it! <br/> Are you sure you want to cancel?</p>
         <button class ="btn_alertYes" id="cancelBtnYes" type="button">Yes</button>
         <button class= "btn_alertNo" id='cancelBtnNo' type="button">No</button>
     </div>
@@ -66,29 +66,40 @@
         <button class="tab_link" id="tabToDo">To Do</button>
         <button class="tab_link" id="tabDone">Done</button>
     </div>
-    <div class="tab_content" id="tabContent">
+    <div class="tab_content" id="tabContent1">
         <h3>Tasks To Do</h3>
         <table class="tasks_table">
             <tr>
+                <th></th>
                 <th>Title</th>
                 <th>Due Date</th>
                 <th>Description</th>
             </tr>
             <tr>
-                <td>Call grandma</td>
+                <td><button>Edit</button></td>
+                <td>Call grandma</td> <!--Include editing button-->
                 <td>20/06/18</td>
                 <td>She leaves to Galicia</td>
             </tr>
+            <tr>
+                <td><button>Edit</button></td>
+                <td>Book summer trip</td> <!--Include editing button-->
+                <td>15/06/18</td>
+                <td>Plan the route and places to stay</td>
+            </tr>
         </table>
-
+    </div>
+    <div class="tab_content" id="tabContent2">
         <h3>Tasks Already Done</h3>
         <table class="tasks_table">
             <tr>
+                <th></th>
                 <th>Title</th>
                 <th>Due Date</th>
                 <th>Description</th>
             </tr>
             <tr>
+                <th><button>Edit</button></th>
                 <td>Buy Ana's present</td>
                 <td>8/06/18</td>
                 <td>Birthday,maybe a dress</td>
@@ -103,6 +114,8 @@
 
 
 <script type="text/javascript" src="js/js_todolist.js"></script>
+
+<script type="text/javascript" src="js/js_tabs.js"></script>
 
 </body>
 </html>
